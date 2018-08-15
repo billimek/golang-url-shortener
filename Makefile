@@ -18,7 +18,7 @@ getCMDDependencies:
 	go get -v github.com/mitchellh/gox
 
 getGoDependencies:
-	go get -v ./...
+	dep ensure
 
 buildProject:
 	rm -rf releases 
